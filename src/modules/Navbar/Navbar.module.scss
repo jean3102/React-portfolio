@@ -137,12 +137,11 @@
             position: fixed;
             top: 4.5rem;
             width: 100%;
-            height: calc(100lvh - 4.5rem);
+            height: calc(100vh - 4.5rem);
             flex-direction: column;
             padding: 1rem;
             background-color: color-mix(in srgb, $color-black 90%, transparent 10%);
             backdrop-filter: blur(.25rem);
-            -webkit-backdrop-filter: blur(.25rem);
             z-index: 90;
 
             & .navlink {
@@ -161,7 +160,8 @@
         }
     }
 
-    body:has(.navbar .items.toggle) {
+    body:has(.navbar .items .toggle) {
         position: fixed;
+        width: 100vw;
     }
 }
