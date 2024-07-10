@@ -1,0 +1,268 @@
+@charset "UTF-8";
+@use "@/utils/colors.scss" as *;
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+    transition: all .125s ease;
+
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    border: none;
+    font-weight: 700;
+
+    &.fullWidth {
+        width: 100%;
+    }
+
+    &.upperCase {
+        text-transform: uppercase;
+    }
+
+    &:active {
+        scale: 95%;
+    }
+
+    &:disabled {
+        scale: none !important;
+        cursor: not-allowed;
+    }
+
+    &.default {
+        &.fill {
+            background-color: $color-grey-900;
+            color: $color-white;
+    
+            &:hover {
+                background-color: color-mix(in srgb, $color-grey-900 75%, black 25%);
+            }
+    
+            &:active {
+                background-color: color-mix(in srgb, $color-grey-900 50%, black 50%);
+            }
+
+            &:disabled {
+                background-color: color-mix(in srgb, $color-grey-900 10%, black 90%);
+                color: color-mix(in srgb, $color-grey-500 10%, black 90%);
+            }
+        }
+
+        &.outline {
+            background-color: transparent;
+            color: $color-white;
+            border: 1px solid $color-white;
+
+            &:hover {
+                background-color: color-mix(in srgb, $color-grey-900 10%, transparent 90%);
+                border-color: color-mix(in srgb, $color-white 75%, black 25%);
+                color: color-mix(in srgb, $color-white 75%, black 25%);
+            }
+
+            &:active {
+                background-color: color-mix(in srgb, $color-grey-900 25%, transparent 75%);
+                border-color: color-mix(in srgb, $color-white 67%, black 33%);
+                color: color-mix(in srgb, $color-white 67%, black 33%);
+            }
+
+            &:disabled {
+                background-color: color-mix(in srgb, $color-grey-900 10%, transparent 90%);
+                border-color: color-mix(in srgb, $color-white 10%, black 90%);
+                color: color-mix(in srgb, $color-white 10%, black 90%);
+            }
+        }
+    }
+
+    &.primary {
+        &.fill {
+            background-color: $color-blue-900;
+            color: $color-white;
+    
+            &:hover {
+                background-color: color-mix(in srgb, $color-blue-900 75%, black 25%);
+            }
+    
+            &:active {
+                background-color: color-mix(in srgb, $color-blue-900 50%, black 50%);
+            }
+    
+            &:disabled {
+                background-color: color-mix(in srgb, $color-blue-900 10%, black 90%);
+                color: color-mix(in srgb, $color-blue-500 10%, black 90%);
+            }
+        }
+    
+        &.outline {
+            background-color: transparent;
+            color: $color-blue-900;
+            border: 1px solid $color-blue-900;
+    
+            &:hover {
+                background-color: color-mix(in srgb, $color-blue-900 10%, transparent 90%);
+                border-color: color-mix(in srgb, $color-blue-900 75%, black 25%);
+                color: color-mix(in srgb, $color-blue-900 75%, black 25%);
+            }
+    
+            &:active {
+                background-color: color-mix(in srgb, $color-blue-900 25%, transparent 75%);
+                border-color: color-mix(in srgb, $color-blue-900 67%, black 33%);
+                color: color-mix(in srgb, $color-blue-900 67%, black 33%);
+            }
+    
+            &:disabled {
+                background-color: color-mix(in srgb, $color-blue-900 10%, transparent 90%);
+                border-color: color-mix(in srgb, $color-blue-900 10%, black 90%);
+                color: color-mix(in srgb, $color-blue-900 10%, black 90%);
+            }
+        }
+    }
+    
+
+    &.secondary {
+        &.fill {
+            background-color: $color-blue-grey-900;
+            color: $color-white;
+    
+            &:hover {
+                background-color: color-mix(in srgb, $color-blue-grey-900 75%, black 25%);
+            }
+    
+            &:active {
+                background-color: color-mix(in srgb, $color-blue-grey-900 50%, black 50%);
+            }
+    
+            &:disabled {
+                background-color: color-mix(in srgb, $color-blue-grey-900 10%, black 90%);
+                color: color-mix(in srgb, $color-blue-grey-500 10%, black 90%);
+            }
+        }
+    
+        &.outline {
+            background-color: transparent;
+            color: $color-blue-grey-900;
+            border: 1px solid $color-blue-grey-900;
+    
+            &:hover {
+                background-color: color-mix(in srgb, $color-blue-grey-900 10%, transparent 90%);
+                border-color: color-mix(in srgb, $color-blue-grey-900 75%, black 25%);
+                color: color-mix(in srgb, $color-blue-grey-900 75%, black 25%);
+            }
+    
+            &:active {
+                background-color: color-mix(in srgb, $color-blue-grey-900 25%, transparent 75%);
+                border-color: color-mix(in srgb, $color-blue-grey-900 67%, black 33%);
+                color: color-mix(in srgb, $color-blue-grey-900 67%, black 33%);
+            }
+    
+            &:disabled {
+                background-color: color-mix(in srgb, $color-blue-grey-900 10%, transparent 90%);
+                border-color: color-mix(in srgb, $color-blue-grey-900 10%, black 90%);
+                color: color-mix(in srgb, $color-blue-grey-900 10%, black 90%);
+            }
+        }
+    }
+    
+
+    &.error {
+        &.fill {
+            background-color: $color-red-900;
+            color: $color-white;
+    
+            &:hover {
+                background-color: color-mix(in srgb, $color-red-900 75%, black 25%);
+            }
+    
+            &:active {
+                background-color: color-mix(in srgb, $color-red-900 50%, black 50%);
+            }
+    
+            &:disabled {
+                background-color: color-mix(in srgb, $color-red-900 10%, black 90%);
+                color: color-mix(in srgb, $color-red-500 10%, black 90%);
+            }
+        }
+    
+        &.outline {
+            background-color: transparent;
+            color: $color-red-900;
+            border: 1px solid $color-red-900;
+    
+            &:hover {
+                background-color: color-mix(in srgb, $color-red-900 10%, transparent 90%);
+                border-color: color-mix(in srgb, $color-red-900 75%, black 25%);
+                color: color-mix(in srgb, $color-red-900 75%, black 25%);
+            }
+    
+            &:active {
+                background-color: color-mix(in srgb, $color-red-900 25%, transparent 75%);
+                border-color: color-mix(in srgb, $color-red-900 67%, black 33%);
+                color: color-mix(in srgb, $color-red-900 67%, black 33%);
+            }
+    
+            &:disabled {
+                background-color: color-mix(in srgb, $color-red-900 10%, transparent 90%);
+                border-color: color-mix(in srgb, $color-red-900 10%, black 90%);
+                color: color-mix(in srgb, $color-red-900 10%, black 90%);
+            }
+        }
+    }
+    
+
+    &.success {
+        &.fill {
+            background-color: $color-teal-900;
+            color: $color-white;
+    
+            &:hover {
+                background-color: color-mix(in srgb, $color-teal-900 75%, black 25%);
+            }
+    
+            &:active {
+                background-color: color-mix(in srgb, $color-teal-900 50%, black 50%);
+            }
+    
+            &:disabled {
+                background-color: color-mix(in srgb, $color-teal-900 10%, black 90%);
+                color: color-mix(in srgb, $color-teal-500 10%, black 90%);
+            }
+        }
+    
+        &.outline {
+            background-color: transparent;
+            color: $color-teal-900;
+            border: 1px solid $color-teal-900;
+    
+            &:hover {
+                background-color: color-mix(in srgb, $color-teal-900 10%, transparent 90%);
+                border-color: color-mix(in srgb, $color-teal-900 75%, black 25%);
+                color: color-mix(in srgb, $color-teal-900 75%, black 25%);
+            }
+    
+            &:active {
+                background-color: color-mix(in srgb, $color-teal-900 25%, transparent 75%);
+                border-color: color-mix(in srgb, $color-teal-900 67%, black 33%);
+                color: color-mix(in srgb, $color-teal-900 67%, black 33%);
+            }
+    
+            &:disabled {
+                background-color: color-mix(in srgb, $color-teal-900 10%, transparent 90%);
+                border-color: color-mix(in srgb, $color-teal-900 10%, black 90%);
+                color: color-mix(in srgb, $color-teal-900 10%, black 90%);
+            }
+        }
+    }
+}
+
+.small {
+    font-size: small;
+}
+
+.medium {
+    font-size: medium;
+}
+
+.large {
+    font-size: large;
+}
