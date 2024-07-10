@@ -25,7 +25,7 @@ const Button = ({ children, ...props }: ButtonProps) => {
                         ${props.size ? style[props.size] : style.medium}
                         ${props.icon ? style.iconed : ""}
                         ${props.className}`} style={props.style} disabled={props.disabled} onClick={props.onClick}>
-      {props.icon ? <span className={props.size ? style[props.size] : style.medium}>{props.icon}</span> : ""}
+      {props.icon ? <span className={`${props.size ? style[props.size] : style.medium} ${style.icon}`}>{props.icon}</span> : ""}
       {children}
     </button>
   )
