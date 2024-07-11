@@ -4,13 +4,14 @@ import style from "./Section.module.scss"
 interface SectionProps {
     id?: string
     children?: React.ReactNode
+    className?: string
 }
 
-const Section = ({ id, children }: SectionProps) => {
+const Section = ({ id, children, className }: SectionProps) => {
   return (
     <>
       <div className={style.anchor} id={id ?? ""} />
-      <section>
+      <section className={className ?? ""}>
         {children ?? ""}
       </section>
     </>
