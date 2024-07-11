@@ -126,11 +126,6 @@ const skills = [
     icon: <Image src="/skills/notion.svg" alt="Notion" width={64} height={64} />,
     label: "Notion",
     link: "https://www.notion.so/"
-  },
-  {
-    icon: <Image src="/skills/latex.svg" alt="LaTeX" width={64} height={64} />,
-    label: "LaTeX",
-    link: "https://www.latex-project.org/"
   }
 ]
 
