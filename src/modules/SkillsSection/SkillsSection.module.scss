@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@use "@/utils/colors.scss" as *;
+
+.skills {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+
+    & .skillsContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: .5rem;
+        width: 50%;
+
+        & > * > * {
+            transition: all .125s ease;
+            object-fit: cover;
+
+            &:hover {
+                filter: brightness(75%)
+            }
+
+            &:active {
+                scale: 0.95
+            }
+        }
+    }
+}
