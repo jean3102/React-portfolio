@@ -11,7 +11,7 @@ const Quote = ({ text, author }: QuoteProps) => {
     <div className={style["quote-container"]}>
       <blockquote className={style["quote"]}>
         <p>{text}</p>
-        <cite className={style["author"]}>- {author}</cite>
+        <cite className={style["author"]}>&mdash; {author}</cite>
       </blockquote>
     </div>
   )
