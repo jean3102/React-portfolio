@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect } from "react"
 import HeroSection from "@/modules/HeroSection/HeroSection"
+import SkillsSection from "@/modules/SkillsSection/SkillsSection"
 import AOS from "aos"
 import "aos/dist/aos.css"
 
@@ -16,6 +17,7 @@ const page = () => {
   return (
     <>
       <HeroSection />
+      <SkillsSection />
     </>
   )
 }
