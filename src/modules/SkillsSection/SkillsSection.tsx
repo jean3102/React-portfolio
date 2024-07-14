@@ -17,7 +17,7 @@ interface Skill {
 const SkillsSection = () => {
   return (
     <Section className={style.skills}>
-      <div data-aos="fade-left" data-aos-delay="600">
+      <div data-aos="fade-left">
         <Quote text="Всё, что нужно &mdash; это превращать знания в навыки." author="Александр Куберский, &laquo;Секреты внутренней силы&raquo;" />
       </div>
       <div className={style.skillsContainer}>
