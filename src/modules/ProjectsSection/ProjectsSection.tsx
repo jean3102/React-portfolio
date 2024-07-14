@@ -27,10 +27,10 @@ const CardControls = ({ project }: CardControlsProps) => {
   return (
     <div className={style.controls}>
       {project.link ? <a href={project.link} rel="noopener norefferer" target="_blank">
-                        <Button variant="primary"icon={<ExternalLink />}>Проект</Button>
+                        <Button variant="primary" size="small" icon={<ExternalLink />}>Проект</Button>
                       </a> : ""}
       {project.github ? <a href={project.github} rel="noopener norefferer" target="_blank">
-        <Button variant="secondary" icon={<GitHub />}>{showGithub && "Github"}</Button>
+        <Button variant="secondary" size="small" icon={<GitHub />}>{showGithub && "Github"}</Button>
       </a> : ""}
     </div>
   )
