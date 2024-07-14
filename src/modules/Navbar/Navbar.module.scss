@@ -11,6 +11,7 @@
     z-index: 100;
     background-color: color-mix(in srgb, $color-black 90%, transparent 10%);
     backdrop-filter: blur(.25rem);
+    -webkit-backdrop-filter: blur(.25rem);
     padding: 1rem 2rem;
     border-bottom: 1px solid $color-grey-500;
 
@@ -146,6 +147,7 @@
             padding: 1rem;
             background-color: color-mix(in srgb, $color-black 90%, transparent 10%);
             backdrop-filter: blur(.25rem);
+            -webkit-backdrop-filter: blur(.25rem);
             z-index: 90;
             margin: -1rem;
 
