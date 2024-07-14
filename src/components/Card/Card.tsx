@@ -28,6 +28,7 @@ const Card = (props: CardProps) => {
           <Badge key={index} color={getColorByTech(tag)} size="small">{tag}</Badge>
         ))}
       </div>
+      {props.controls}
     </div>
   )
 }
