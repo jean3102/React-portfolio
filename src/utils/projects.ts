@@ -13,6 +13,7 @@ export const projectsList = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur velit vel met tell tellus et",
         tags: ["svelte", "sveltekit", "typescript", "next.js"],
         link: "https://github.com/tolstovr",
+        github: "https://github.com/tolstovr",
         difficulty: 8,
     },
     {
@@ -21,6 +22,7 @@ export const projectsList = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur velit vel met tell tellus et",
         tags: ["sass", "tailwind-css", "fastapi"],
         link: "https://github.com/tolstovr",
+        github: "https://github.com/tolstovr",
         difficulty: 3,
     }
 ]
