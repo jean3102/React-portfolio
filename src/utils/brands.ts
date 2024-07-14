@@ -4,7 +4,7 @@ export const techList = [
     { tech: "javascript", color: "#f7df1e" },
     { tech: "typescript", color: "#3178c6" },
     { tech: "react.js", color: "#61dafb" },
-    { tech: "next.js", color: "#000000" },
+    { tech: "next.js", color: "#ffffff" },
     { tech: "node.js", color: "#339933" },
     { tech: "vite", color: "#2c3e50" },
     { tech: "svelte", color: "#ff3e00" },
@@ -13,7 +13,7 @@ export const techList = [
     { tech: "tailwind-css", color: "#38b2ac" },
     { tech: "mui", color: "#00897b" },
     { tech: "git", color: "#f1e05a" },
-    { tech: "express.js", color: "#000000" },
+    { tech: "express.js", color: "#ffffff" },
     { tech: "python", color: "#3776ab" },
     { tech: "fastapi", color: "#009688" }
 ]
