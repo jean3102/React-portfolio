@@ -3,7 +3,8 @@ import React, { useState, useEffect } from "react"
 import style from "./Navbar.module.scss"
 import Link from "next/link"
 import Image from "next/image"
-import { Archive, AtSign, FileText, GitHub, User } from "react-feather"
+import { Archive, AtSign, FileText, User } from "react-feather"
+import { GitHub } from "@/components/Icons/Github"
 
 const routes = [
   {
