@@ -23,11 +23,11 @@
             object-fit: cover;
 
             &:hover {
-                filter: brightness(75%)
+                filter: brightness(75%);
             }
 
             &:active {
-                scale: 0.95
+                scale: 0.95;
             }
         }
     }

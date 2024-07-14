@@ -43,9 +43,9 @@ const skills = [
     link: "https://nodejs.org/en/"
   },
   {
-    icon: <Image src="/skills/git.svg" alt="Git" width={64} height={64} />,
-    label: "Git",
-    link: "https://git-scm.com/"
+    icon: <Image src="/skills/vite.svg" alt="Vite" width={64} height={64} />,
+    label: "Vite",
+    link: "https://vitejs.dev/"
   },
   {
     icon: <Image src="/skills/svelte.svg" alt="Svelte" width={64} height={64} />,
@@ -63,14 +63,14 @@ const skills = [
     link: "https://tailwindcss.com/"
   },
   {
-    icon: <Image src="/skills/vite.svg" alt="Vite" width={64} height={64} />,
-    label: "Vite",
-    link: "https://vitejs.dev/"
-  },
-  {
     icon: <Image src="/skills/mui.svg" alt="Material UI" width={64} height={64} />,
     label: "Material UI",
     link: "https://mui.com/"
+  },
+  {
+    icon: <Image src="/skills/git.svg" alt="Git" width={64} height={64} />,
+    label: "Git",
+    link: "https://git-scm.com/"
   },
   {
     icon: <Image src="/skills/expressjs.svg" alt="Express.js" width={64} height={64} />,
