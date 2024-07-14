@@ -21,6 +21,7 @@ const Card = (props: CardProps) => {
       <div className={style.text}>
         <h2>{props.title}</h2>
         <p>{props.description}</p>
+        {props.difficulty && <p><b>Сложность:</b> {props.difficulty}/10</p>}
       </div>
       <div className={style.tags}>
         {props.tags?.map((tag, index) => (
