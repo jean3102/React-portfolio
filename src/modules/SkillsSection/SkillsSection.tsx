@@ -96,7 +96,7 @@ const SkillsSection = () => {
         <Quote text="Всё, что нужно &mdash; это превращать знания в навыки." author="Александр Куберский, &laquo;Секреты внутренней силы&raquo;" />
       </div>
       <div className={style.skillsContainer}>
-        {skills.map((skill, index) => <Link href={skill.link} key={index} target="_blank" title={skill.label}  data-aos="fade-up" data-aos-delay={(index % 16) * 50}>
+        {skills.map((skill, index) => <Link href={skill.link} key={index} target="_blank" title={skill.label}  data-aos="fade-up" data-aos-delay={(index % 8) * 50}>
           {skill.icon}
         </Link>)}
       </div>
