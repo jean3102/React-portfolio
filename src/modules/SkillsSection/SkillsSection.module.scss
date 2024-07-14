@@ -43,7 +43,8 @@
 
         & .skillsContainer {
             width: 90%;
-
+            margin: auto;
+            justify-content: center;
         }
 
         & :not(.skillsContainer) :not(cite) {
