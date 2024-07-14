@@ -10,7 +10,7 @@ import Link from "next/link"
 const HeroSection = () => {
   return (
     <Section id="о_себе">
-      <header className={style.header}>
+      <header data-aos="fade-in" className={style.header}>
         <div className={style.text}>
           <h1 data-aos="fade-right">Frontend разработчик.<br />UI/UX инженер.</h1>
           <div className={style.subtext} data-aos="fade-up" data-aos-delay="200">
