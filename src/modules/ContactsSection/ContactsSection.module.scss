@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@use "@/utils/colors.scss" as *;
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    padding: 5rem;
+    background-image: 
+        linear-gradient(to right, $color-grey-900 1px, transparent 1px),
+        linear-gradient(to bottom, $color-grey-900 1px, transparent 1px);
+    background-size: 4rem 4rem;
+    background-position: -1rem -1rem;
+    border: 1px solid $color-grey-900;
+
+    & > h1 {
+        font-size: 3rem;
+    }
+
+    & .contactsContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
