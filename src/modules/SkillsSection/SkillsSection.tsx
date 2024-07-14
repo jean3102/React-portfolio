@@ -43,24 +43,9 @@ const skills = [
     link: "https://nodejs.org/en/"
   },
   {
-    icon: <Image src="/skills/npm.svg" alt="npm" width={64} height={64} />,
-    label: "npm",
-    link: "https://www.npmjs.com/"
-  },
-  {
     icon: <Image src="/skills/git.svg" alt="Git" width={64} height={64} />,
     label: "Git",
     link: "https://git-scm.com/"
-  },
-  {
-    icon: <Image src="/skills/docker.svg" alt="Docker" width={64} height={64} />,
-    label: "Docker",
-    link: "https://www.docker.com/"
-  },
-  {
-    icon: <Image src="/skills/github.svg" alt="GitHub" width={64} height={64} />,
-    label: "GitHub",
-    link: "https://github.com/"
   },
   {
     icon: <Image src="/skills/svelte.svg" alt="Svelte" width={64} height={64} />,
@@ -83,19 +68,9 @@ const skills = [
     link: "https://vitejs.dev/"
   },
   {
-    icon: <Image src="/skills/webpack.svg" alt="Webpack" width={64} height={64} />,
-    label: "Webpack",
-    link: "https://webpack.js.org/"
-  },
-  {
     icon: <Image src="/skills/mui.svg" alt="Material UI" width={64} height={64} />,
     label: "Material UI",
     link: "https://mui.com/"
-  },
-  {
-    icon: <Image src="/skills/md.svg" alt="Markdown" width={64} height={64} />,
-    label: "Markdown",
-    link: "https://daringfireball.net/projects/markdown/"
   },
   {
     icon: <Image src="/skills/expressjs.svg" alt="Express.js" width={64} height={64} />,
@@ -111,21 +86,6 @@ const skills = [
     icon: <Image src="/skills/fastapi.svg" alt="FastAPI" width={64} height={64} />,
     label: "FastAPI",
     link: "https://fastapi.tiangolo.com/"
-  },
-  {
-    icon: <Image src="/skills/postgresql.svg" alt="PostgreSQL" width={64} height={64} />,
-    label: "PostgreSQL",
-    link: "https://www.postgresql.org/"
-  },
-  {
-    icon: <Image src="/skills/bash.svg" alt="Bash" width={64} height={64} />,
-    label: "Bash",
-    link: "https://www.gnu.org/software/bash/"
-  },
-  {
-    icon: <Image src="/skills/notion.svg" alt="Notion" width={64} height={64} />,
-    label: "Notion",
-    link: "https://www.notion.so/"
   }
 ]
 
