@@ -33,6 +33,14 @@
     }
 }
 
+.controls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem;
+}
+
 @media screen and (max-width: 968px) {
     .projects {
         margin: 3rem 5rem;

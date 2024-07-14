@@ -1,4 +1,5 @@
-import React from "react"
+"use client"
+import React, { useState } from "react"
 import Section from "@/modules/Section/Section"
 import style from "./ProjectsSection.module.scss"
 import { projectsList } from "@/utils/projects"
@@ -21,13 +22,15 @@ interface CardControlsProps {
 }
 
 const CardControls = ({ project }: CardControlsProps) => {
+  const [showGithub, setShowGithub] = useState(!project.link)
+
   return (
     <div className={style.controls}>
       {project.link ? <a href={project.link} rel="noopener norefferer" target="_blank">
-                        <Button variant="primary" size="small" icon={<ExternalLink />}>Перейти на сайт</Button>
+                        <Button variant="primary"icon={<ExternalLink />}>Проект</Button>
                       </a> : ""}
       {project.github ? <a href={project.github} rel="noopener norefferer" target="_blank">
-        <Button variant="secondary" size="small" icon={<GitHub />}>Github</Button>
+        <Button variant="secondary" icon={<GitHub />}>{showGithub && "Github"}</Button>
       </a> : ""}
     </div>
   )
