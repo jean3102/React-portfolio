@@ -16,7 +16,7 @@
     border: 1px solid $color-grey-500;
     background-color: color-mix(in srgb, $color-grey-900 25%, black 75%);
 
-    & > *:not(.image) {
+    & > *:not(.image, :last-child) {
         margin: 0 .5rem;
     }
 
