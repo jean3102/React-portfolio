@@ -19,6 +19,6 @@ export const techList = [
 ]
 
 export const getColorByTech = (tech: string): string => {
-  const techItem = techList.find(item => item.tech === tech);
-  return techItem ? techItem.color : "#ffffff";
+  const techItem = techList.find(item => item.tech === tech)
+  return techItem ? techItem.color : "#ffffff"
 }
