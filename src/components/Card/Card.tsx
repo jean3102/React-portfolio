@@ -27,8 +27,8 @@ const Card = (props: CardProps) => {
         {props.tags?.map((tag, index) => (
           <Badge key={index} color={getColorByTech(tag)} size="small">{tag}</Badge>
         ))}
+        {props.controls}
       </div>
-      {props.controls}
     </div>
   )
 }

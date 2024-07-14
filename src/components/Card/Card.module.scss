@@ -47,5 +47,9 @@
         justify-content: flex-start;
         gap: .5rem;
         width: 100%;
+
+        & > *:last-child {
+            margin-top: .5rem;
+        }
     }
 }
