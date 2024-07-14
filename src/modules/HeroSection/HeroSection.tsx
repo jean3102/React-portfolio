@@ -16,7 +16,7 @@ const HeroSection = () => {
           <div className={style.subtext} data-aos="fade-up" data-aos-delay="200">
             Привет, меня зовут Роберт и я создаю современные и удобные интерфейсы.
             А ещё я знаю как правильно расположить кнопку.
-            А ещё я студент направления &laquo;Программная инженерия&raquo;
+            А ещё я студент направления &laquo;Программная инженерия&raquo; СГУ им. Чернышевского
           </div>
           <div className={style.callToAction} data-aos="fade-up" data-aos-delay="400">
             <Link href="#проекты">
