@@ -4,9 +4,8 @@ import Section from "@/modules/Section/Section"
 import style from "./HeroSection.module.scss"
 import Image from "next/image"
 import Button from "@/components/Button/Button"
-import { ArrowDownward } from "@/components/Icons/ArrowDownward"
-import { CV } from "@/components/Icons/CV"
 import Link from "next/link"
+import { ArrowDownward, CV } from "@/components/Icon/Icon"
 
 const HeroSection = () => {
   return (

@@ -5,8 +5,7 @@ import style from "./ProjectsSection.module.scss"
 import { projectsList } from "@/utils/projects"
 import Card from "@/components/Card/Card"
 import Button from "@/components/Button/Button"
-import { ArrowOutward } from "@/components/Icons/ArrowOutward"
-import { GitHub } from "@/components/Icons/Github"
+import { ArrowOutward, GitHub } from "@/components/Icon/Icon"
 
 interface Project {
   imagePath?: string

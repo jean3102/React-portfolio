@@ -3,9 +3,7 @@ import React from "react"
 import style from "./ContactsSection.module.scss"
 import Section from "../Section/Section"
 import Button from "@/components/Button/Button"
-import { Telegram } from "@/components/Icons/Telegram"
-import { Gmail } from "@/components/Icons/Gmail"
-import { GitHub } from "@/components/Icons/Github"
+import { Telegram, Gmail, GitHub } from "@/components/Icon/Icon"
 
 const ContactsSection = () => {
   return (

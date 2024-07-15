@@ -3,11 +3,7 @@ import React, { useState, useEffect } from "react"
 import style from "./Navbar.module.scss"
 import Link from "next/link"
 import Image from "next/image"
-import { GitHub } from "@/components/Icons/Github"
-import { CV } from "@/components/Icons/CV"
-import { Person } from "@/components/Icons/Person"
-import { Projects } from "@/components/Icons/Projects"
-import { Contacts } from "@/components/Icons/Contacts"
+import { Person, Projects, Contacts, CV, GitHub } from "@/components/Icon/Icon"
 
 const routes = [
   {
