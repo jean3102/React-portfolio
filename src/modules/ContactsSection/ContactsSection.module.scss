@@ -31,3 +31,17 @@
         gap: 1rem;
     }
 }
+
+@media screen and (max-width: 968px) {
+    .contacts {
+        flex-direction: column;
+        padding: 1rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        gap: 2rem;
+
+        & .contactsContainer > * {
+            width: 100%;
+        }
+    }
+}

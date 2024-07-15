@@ -142,7 +142,7 @@
             position: fixed;
             top: calc(5.5rem + 1px);
             width: 100vw;
-            height: calc(100vh - 5.5rem - 1px);
+            height: calc(100lvh - 4.5rem - 1px);
             flex-direction: column;
             padding: 1rem;
             background-color: color-mix(in srgb, $color-black 90%, transparent 10%);
@@ -167,8 +167,8 @@
         }
     }
 
-    body:has(.navbar .items .toggle) {
-        position: fixed;
+    body:has(.navbar .items.toggle) {
         width: 100vw;
+        overflow: hidden !important;
     }
 }

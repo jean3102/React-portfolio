@@ -12,17 +12,17 @@ const ContactsSection = () => {
         <h1 data-aos="fade-right">Контакты</h1>
         <div className={style.contactsContainer}>
           <a data-aos="fade-up" href="https://t.me/im_robertproducts" target="_blank" rel="noopener norefferer">
-            <Button variant="primary" size="large" icon={<Telegram />}>
+            <Button variant="primary" size="large" icon={<Telegram />} fullWidth>
               Telegram
             </Button>
           </a>
           <a data-aos="fade-up" data-aos-delay="200" href="mailto:tolstovrob@gmail.com" target="_blank" rel="noopener norefferer">
-            <Button variant="error" size="large" icon={<Gmail />}>
+            <Button variant="error" size="large" icon={<Gmail />} fullWidth>
               Gmail
             </Button>
           </a>
           <a data-aos="fade-up" data-aos-delay="400" href="https://github.com/tolstovr" target="_blank" rel="noopener norefferer">
-            <Button variant="secondary" size="large" icon={<GitHub />}>
+            <Button variant="secondary" size="large" icon={<GitHub />} fullWidth>
               Github
             </Button>
           </a>
