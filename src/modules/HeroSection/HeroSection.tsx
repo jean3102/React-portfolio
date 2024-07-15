@@ -4,8 +4,8 @@ import Section from "@/modules/Section/Section"
 import style from "./HeroSection.module.scss"
 import Image from "next/image"
 import Button from "@/components/Button/Button"
-import { ArrowDown, FileText } from "react-feather"
 import Link from "next/link"
+import { ArrowDownward, CV } from "@/components/Icon/Icon"
 
 const HeroSection = () => {
   return (
@@ -20,10 +20,10 @@ const HeroSection = () => {
           </div>
           <div className={style.callToAction} data-aos="fade-up" data-aos-delay="400">
             <Link href="#проекты">
-              <Button variant="primary" icon={<ArrowDown />}>Посмотреть работы</Button>
+              <Button variant="primary" icon={<ArrowDownward />}>Посмотреть работы</Button>
             </Link>
             <Link href="#" download>
-              <Button variant="secondary" icon={<FileText />}>Скачать CV</Button>
+              <Button variant="secondary" icon={<CV />}>Скачать CV</Button>
             </Link>
           </div>
         </div>
