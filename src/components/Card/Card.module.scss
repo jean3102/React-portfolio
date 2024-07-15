@@ -57,3 +57,13 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 968px) {
+    .card {
+        width: 100%;
+
+        & .image {
+            width: 100%;
+        }
+    }
+}
