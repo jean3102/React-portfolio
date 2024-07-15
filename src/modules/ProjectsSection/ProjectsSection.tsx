@@ -5,7 +5,7 @@ import style from "./ProjectsSection.module.scss"
 import { projectsList } from "@/utils/projects"
 import Card from "@/components/Card/Card"
 import Button from "@/components/Button/Button"
-import { ExternalLink } from "react-feather"
+import { ArrowOutward } from "@/components/Icons/ArrowOutward"
 import { GitHub } from "@/components/Icons/Github"
 
 interface Project {
@@ -28,10 +28,10 @@ const CardControls = ({ project }: CardControlsProps) => {
   return (
     <div className={style.controls}>
       {project.link ? <a href={project.link} rel="noopener norefferer" target="_blank">
-                        <Button variant="primary" size="small" icon={<ExternalLink />}>Проект</Button>
+                        <Button variant="primary" size="small" icon={<ArrowOutward />}>Проект</Button>
                       </a> : ""}
       {project.github ? <a href={project.github} rel="noopener norefferer" target="_blank">
-        <Button variant="secondary" size="small" icon={<GitHub />} style={{padding: ".25rem 1rem"}}>{showGithub && "Репозиторий"}</Button>
+        <Button variant="secondary" size="small" icon={<GitHub />}>{showGithub && "Репозиторий"}</Button>
       </a> : ""}
     </div>
   )

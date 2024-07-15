@@ -3,24 +3,27 @@ import React, { useState, useEffect } from "react"
 import style from "./Navbar.module.scss"
 import Link from "next/link"
 import Image from "next/image"
-import { Archive, AtSign, FileText, User } from "react-feather"
 import { GitHub } from "@/components/Icons/Github"
+import { CV } from "@/components/Icons/CV"
+import { Person } from "@/components/Icons/Person"
+import { Projects } from "@/components/Icons/Projects"
+import { Contacts } from "@/components/Icons/Contacts"
 
 const routes = [
   {
     label: "О себе",
     href: "#о_себе",
-    icon: <User />
+    icon: <Person />
   },
   {
     label: "Проекты",
     href: "#проекты",
-    icon: <Archive />
+    icon: <Projects />
   },
   {
     label: "Контакты",
     href: "#контакты",
-    icon: <AtSign />
+    icon: <Contacts />
   }
 ]
 
@@ -77,7 +80,7 @@ const Navbar = () => {
           <GitHub />
         </Link>
         <Link href="#" target="_blank" download>
-          <FileText />
+          <CV />
         </Link>
       </div>
       <button className={`${style.burger} ${navToggle ? style.active : ""}`} onClick={() => {setNavToggle(prev => !prev)}}>
