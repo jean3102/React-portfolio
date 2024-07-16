@@ -7,7 +7,7 @@ import ContactsSection from "@/modules/ContactsSection/ContactsSection"
 import AOS from "aos"
 import "aos/dist/aos.css"
 
-const page = () => {
+const Page = () => {
   useEffect(() => {
     AOS.init({
       easing: "ease",
@@ -26,4 +26,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
